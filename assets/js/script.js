@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('penny.image').src = 'assets/images/penny-heads.jpg'
             document.getElementById('message').textContent = 'You Flipped Heads!'
 
-            headsRolls += 1
+            headsRolls ++
         }
         else {
             document.getElementById('penny-image').src = 'assets/images/penny-tails.jpg'
             document.getElementById('message').textContent = 'You Flipped Tails!'
 
-            tailsRolls += 1
+            tailsRolls ++
         }
     })
 })
