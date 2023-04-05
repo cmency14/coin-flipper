@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // You can remove it once you see it in your browser console in the developer tools
 console.log('Hi')
     // TODO: Add event listener and handler for flip and clear buttons
-    document.addEventListener('click', () => {
+    document.getElementById('flip').addEventListener('click', () => {
         let flippedHeads = Math.random() < 0.5
         
     // Flip Button Click Handler
@@ -17,12 +17,12 @@ console.log('Hi')
         if (flippedHeads) {
             document.getElementById('penny.image').src = 'assets/images/penny-heads.jpg'
             document.getElementById('message').textContent = 'You Flipped Heads!'
-            headsRolls += 1
+            headsRolls++
         }
         else {
             document.getElementById('penny-image').src = 'assets/images/penny-tails.jpg'
             document.getElementById('message').textContent = 'You Flipped Tails!'
-            tailsRolls += 1
+            tailsRolls++
         }
     })
 })
