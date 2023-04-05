@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // TODO: Add event listener and handler for flip and clear buttons
     document.getElementById('flip').addEventListener('click', () => {
-        let flippedHeads = math.random() < 0.5
+        let flippedHeads = Math.random() < 0.5
         
     // Flip Button Click Handler
         // TODO: Determine flip outcome
