@@ -5,9 +5,9 @@ let tailsRolls = 0
 document.addEventListener('DOMContentLoaded', function () {
     // This is just a sanity check to make sure your JavaScript script is getting loaded
     // You can remove it once you see it in your browser console in the developer tools
-
+console.log('Hi')
     // TODO: Add event listener and handler for flip and clear buttons
-    document.getElementById('flip').addEventListener('click', () => {
+    document.addEventListener('click', () => {
         let flippedHeads = Math.random() < 0.5
         
     // Flip Button Click Handler
@@ -17,14 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (flippedHeads) {
             document.getElementById('penny.image').src = 'assets/images/penny-heads.jpg'
             document.getElementById('message').textContent = 'You Flipped Heads!'
-
-            headsRolls ++
+            headsRolls += 1
         }
         else {
             document.getElementById('penny-image').src = 'assets/images/penny-tails.jpg'
             document.getElementById('message').textContent = 'You Flipped Tails!'
-
-            tailsRolls ++
+            tailsRolls += 1
         }
     })
 })
